@@ -4,7 +4,7 @@
 #
 Name     : libtraceevent
 Version  : 1.3.0
-Release  : 1
+Release  : 2
 URL      : https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.3.0.tar.gz
 Source0  : https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.3.0.tar.gz
 Summary  : No detailed summary available
@@ -34,7 +34,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1621362677
+export SOURCE_DATE_EPOCH=1621362857
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -47,9 +47,12 @@ make  %{?_smp_mflags}
 
 
 %install
-export SOURCE_DATE_EPOCH=1621362677
+export SOURCE_DATE_EPOCH=1621362857
 rm -rf %{buildroot}
 %make_install
+## install_append content
+%make_install install_lib
+## install_append end
 
 %files
 %defattr(-,root,root,-)
