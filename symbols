@@ -1,3 +1,4 @@
+libtraceevent.so.1:__tep_vprint
 libtraceevent.so.1:breakpoint
 libtraceevent.so.1:get_field_val
 libtraceevent.so.1:kbuffer_alloc
