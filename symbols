@@ -97,6 +97,8 @@ libtraceevent.so.1:tep_print_plugins
 libtraceevent.so.1:tep_print_printk
 libtraceevent.so.1:tep_read_number
 libtraceevent.so.1:tep_read_number_field
+libtraceevent.so.1:tep_record_print_fields
+libtraceevent.so.1:tep_record_print_selected_fields
 libtraceevent.so.1:tep_ref
 libtraceevent.so.1:tep_register_comm
 libtraceevent.so.1:tep_register_event_handler
