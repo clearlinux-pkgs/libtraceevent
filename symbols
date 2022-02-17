@@ -65,6 +65,7 @@ libtraceevent.so.1:tep_get_header_timestamp_size
 libtraceevent.so.1:tep_get_long_size
 libtraceevent.so.1:tep_get_page_size
 libtraceevent.so.1:tep_get_ref
+libtraceevent.so.1:tep_get_sub_buffer_size
 libtraceevent.so.1:tep_info
 libtraceevent.so.1:tep_is_file_bigendian
 libtraceevent.so.1:tep_is_local_bigendian
@@ -89,6 +90,7 @@ libtraceevent.so.1:tep_plugin_print_options
 libtraceevent.so.1:tep_plugin_remove_options
 libtraceevent.so.1:tep_print_event
 libtraceevent.so.1:tep_print_field
+libtraceevent.so.1:tep_print_field_content
 libtraceevent.so.1:tep_print_fields
 libtraceevent.so.1:tep_print_func_field
 libtraceevent.so.1:tep_print_funcs
