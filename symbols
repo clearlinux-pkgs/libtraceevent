@@ -60,6 +60,7 @@ libtraceevent.so.1:tep_get_events_count
 libtraceevent.so.1:tep_get_field_raw
 libtraceevent.so.1:tep_get_field_val
 libtraceevent.so.1:tep_get_first_event
+libtraceevent.so.1:tep_get_function_count
 libtraceevent.so.1:tep_get_header_page_size
 libtraceevent.so.1:tep_get_header_timestamp_size
 libtraceevent.so.1:tep_get_long_size
