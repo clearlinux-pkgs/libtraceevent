@@ -51,6 +51,7 @@ libtraceevent.so.1:tep_find_event_by_record
 libtraceevent.so.1:tep_find_field
 libtraceevent.so.1:tep_find_function
 libtraceevent.so.1:tep_find_function_address
+libtraceevent.so.1:tep_find_function_info
 libtraceevent.so.1:tep_free
 libtraceevent.so.1:tep_get_any_field_val
 libtraceevent.so.1:tep_get_common_field_val
@@ -72,6 +73,7 @@ libtraceevent.so.1:tep_is_file_bigendian
 libtraceevent.so.1:tep_is_local_bigendian
 libtraceevent.so.1:tep_is_old_format
 libtraceevent.so.1:tep_is_pid_registered
+libtraceevent.so.1:tep_kbuffer
 libtraceevent.so.1:tep_list_events
 libtraceevent.so.1:tep_list_events_copy
 libtraceevent.so.1:tep_load_plugins
