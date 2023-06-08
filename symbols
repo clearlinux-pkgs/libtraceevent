@@ -1,4 +1,6 @@
+libtraceevent.so.1:__pr_stat
 libtraceevent.so.1:__tep_vprint
+libtraceevent.so.1:__vpr_stat
 libtraceevent.so.1:breakpoint
 libtraceevent.so.1:get_field_val
 libtraceevent.so.1:kbuffer_alloc
@@ -20,6 +22,7 @@ libtraceevent.so.1:kbuffer_subbuf_timestamp
 libtraceevent.so.1:kbuffer_subbuffer_size
 libtraceevent.so.1:kbuffer_timestamp
 libtraceevent.so.1:kbuffer_translate_data
+libtraceevent.so.1:pr_stat
 libtraceevent.so.1:tep_add_plugin_path
 libtraceevent.so.1:tep_alloc
 libtraceevent.so.1:tep_clear_flag
@@ -126,6 +129,8 @@ libtraceevent.so.1:tep_unload_plugins
 libtraceevent.so.1:tep_unref
 libtraceevent.so.1:tep_unregister_event_handler
 libtraceevent.so.1:tep_unregister_print_function
+libtraceevent.so.1:tep_vprint
+libtraceevent.so.1:tep_vwarning
 libtraceevent.so.1:tep_warning
 libtraceevent.so.1:trace_seq_destroy
 libtraceevent.so.1:trace_seq_do_fprintf
@@ -137,3 +142,4 @@ libtraceevent.so.1:trace_seq_puts
 libtraceevent.so.1:trace_seq_reset
 libtraceevent.so.1:trace_seq_terminate
 libtraceevent.so.1:trace_seq_vprintf
+libtraceevent.so.1:vpr_stat
