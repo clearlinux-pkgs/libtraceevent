@@ -6,10 +6,10 @@
 # autospec commit: c1050fe
 #
 Name     : libtraceevent
-Version  : 1.7.3
-Release  : 21
-URL      : https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.7.3.tar.gz
-Source0  : https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.7.3.tar.gz
+Version  : 1.8.0
+Release  : 22
+URL      : https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.8.0.tar.gz
+Source0  : https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.8.0.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : LGPL-2.0
@@ -55,10 +55,10 @@ staticdev components for the libtraceevent package.
 
 
 %prep
-%setup -q -n libtraceevent-1.7.3
-cd %{_builddir}/libtraceevent-1.7.3
+%setup -q -n libtraceevent-1.8.0
+cd %{_builddir}/libtraceevent-1.8.0
 pushd ..
-cp -a libtraceevent-1.7.3 buildavx2
+cp -a libtraceevent-1.8.0 buildavx2
 popd
 
 %build
@@ -66,7 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1702024229
+export SOURCE_DATE_EPOCH=1703606630
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -139,57 +139,57 @@ DESTDIR=%{buildroot} ninja -C builddir install
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libtraceevent.so.1.7.3
-/V3/usr/lib64/libtraceevent/plugins/plugin_cfg80211.so.1.7.3
-/V3/usr/lib64/libtraceevent/plugins/plugin_function.so.1.7.3
-/V3/usr/lib64/libtraceevent/plugins/plugin_futex.so.1.7.3
-/V3/usr/lib64/libtraceevent/plugins/plugin_hrtimer.so.1.7.3
-/V3/usr/lib64/libtraceevent/plugins/plugin_jbd2.so.1.7.3
-/V3/usr/lib64/libtraceevent/plugins/plugin_kmem.so.1.7.3
-/V3/usr/lib64/libtraceevent/plugins/plugin_kvm.so.1.7.3
-/V3/usr/lib64/libtraceevent/plugins/plugin_mac80211.so.1.7.3
-/V3/usr/lib64/libtraceevent/plugins/plugin_sched_switch.so.1.7.3
-/V3/usr/lib64/libtraceevent/plugins/plugin_scsi.so.1.7.3
-/V3/usr/lib64/libtraceevent/plugins/plugin_tlb.so.1.7.3
-/V3/usr/lib64/libtraceevent/plugins/plugin_xen.so.1.7.3
+/V3/usr/lib64/libtraceevent.so.1.8.0
+/V3/usr/lib64/libtraceevent/plugins/plugin_cfg80211.so.1.8.0
+/V3/usr/lib64/libtraceevent/plugins/plugin_function.so.1.8.0
+/V3/usr/lib64/libtraceevent/plugins/plugin_futex.so.1.8.0
+/V3/usr/lib64/libtraceevent/plugins/plugin_hrtimer.so.1.8.0
+/V3/usr/lib64/libtraceevent/plugins/plugin_jbd2.so.1.8.0
+/V3/usr/lib64/libtraceevent/plugins/plugin_kmem.so.1.8.0
+/V3/usr/lib64/libtraceevent/plugins/plugin_kvm.so.1.8.0
+/V3/usr/lib64/libtraceevent/plugins/plugin_mac80211.so.1.8.0
+/V3/usr/lib64/libtraceevent/plugins/plugin_sched_switch.so.1.8.0
+/V3/usr/lib64/libtraceevent/plugins/plugin_scsi.so.1.8.0
+/V3/usr/lib64/libtraceevent/plugins/plugin_tlb.so.1.8.0
+/V3/usr/lib64/libtraceevent/plugins/plugin_xen.so.1.8.0
 /usr/lib64/libtraceevent.so.1
-/usr/lib64/libtraceevent.so.1.7.3
+/usr/lib64/libtraceevent.so.1.8.0
 /usr/lib64/libtraceevent/plugins/plugin_cfg80211.so
 /usr/lib64/libtraceevent/plugins/plugin_cfg80211.so.1
-/usr/lib64/libtraceevent/plugins/plugin_cfg80211.so.1.7.3
+/usr/lib64/libtraceevent/plugins/plugin_cfg80211.so.1.8.0
 /usr/lib64/libtraceevent/plugins/plugin_function.so
 /usr/lib64/libtraceevent/plugins/plugin_function.so.1
-/usr/lib64/libtraceevent/plugins/plugin_function.so.1.7.3
+/usr/lib64/libtraceevent/plugins/plugin_function.so.1.8.0
 /usr/lib64/libtraceevent/plugins/plugin_futex.so
 /usr/lib64/libtraceevent/plugins/plugin_futex.so.1
-/usr/lib64/libtraceevent/plugins/plugin_futex.so.1.7.3
+/usr/lib64/libtraceevent/plugins/plugin_futex.so.1.8.0
 /usr/lib64/libtraceevent/plugins/plugin_hrtimer.so
 /usr/lib64/libtraceevent/plugins/plugin_hrtimer.so.1
-/usr/lib64/libtraceevent/plugins/plugin_hrtimer.so.1.7.3
+/usr/lib64/libtraceevent/plugins/plugin_hrtimer.so.1.8.0
 /usr/lib64/libtraceevent/plugins/plugin_jbd2.so
 /usr/lib64/libtraceevent/plugins/plugin_jbd2.so.1
-/usr/lib64/libtraceevent/plugins/plugin_jbd2.so.1.7.3
+/usr/lib64/libtraceevent/plugins/plugin_jbd2.so.1.8.0
 /usr/lib64/libtraceevent/plugins/plugin_kmem.so
 /usr/lib64/libtraceevent/plugins/plugin_kmem.so.1
-/usr/lib64/libtraceevent/plugins/plugin_kmem.so.1.7.3
+/usr/lib64/libtraceevent/plugins/plugin_kmem.so.1.8.0
 /usr/lib64/libtraceevent/plugins/plugin_kvm.so
 /usr/lib64/libtraceevent/plugins/plugin_kvm.so.1
-/usr/lib64/libtraceevent/plugins/plugin_kvm.so.1.7.3
+/usr/lib64/libtraceevent/plugins/plugin_kvm.so.1.8.0
 /usr/lib64/libtraceevent/plugins/plugin_mac80211.so
 /usr/lib64/libtraceevent/plugins/plugin_mac80211.so.1
-/usr/lib64/libtraceevent/plugins/plugin_mac80211.so.1.7.3
+/usr/lib64/libtraceevent/plugins/plugin_mac80211.so.1.8.0
 /usr/lib64/libtraceevent/plugins/plugin_sched_switch.so
 /usr/lib64/libtraceevent/plugins/plugin_sched_switch.so.1
-/usr/lib64/libtraceevent/plugins/plugin_sched_switch.so.1.7.3
+/usr/lib64/libtraceevent/plugins/plugin_sched_switch.so.1.8.0
 /usr/lib64/libtraceevent/plugins/plugin_scsi.so
 /usr/lib64/libtraceevent/plugins/plugin_scsi.so.1
-/usr/lib64/libtraceevent/plugins/plugin_scsi.so.1.7.3
+/usr/lib64/libtraceevent/plugins/plugin_scsi.so.1.8.0
 /usr/lib64/libtraceevent/plugins/plugin_tlb.so
 /usr/lib64/libtraceevent/plugins/plugin_tlb.so.1
-/usr/lib64/libtraceevent/plugins/plugin_tlb.so.1.7.3
+/usr/lib64/libtraceevent/plugins/plugin_tlb.so.1.8.0
 /usr/lib64/libtraceevent/plugins/plugin_xen.so
 /usr/lib64/libtraceevent/plugins/plugin_xen.so.1
-/usr/lib64/libtraceevent/plugins/plugin_xen.so.1.7.3
+/usr/lib64/libtraceevent/plugins/plugin_xen.so.1.8.0
 
 %files staticdev
 %defattr(-,root,root,-)
