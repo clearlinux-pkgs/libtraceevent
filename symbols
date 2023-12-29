@@ -75,6 +75,7 @@ libtraceevent.so.1:tep_get_long_size
 libtraceevent.so.1:tep_get_page_size
 libtraceevent.so.1:tep_get_ref
 libtraceevent.so.1:tep_get_sub_buffer_commit_offset
+libtraceevent.so.1:tep_get_sub_buffer_data_size
 libtraceevent.so.1:tep_get_sub_buffer_size
 libtraceevent.so.1:tep_info
 libtraceevent.so.1:tep_is_file_bigendian
